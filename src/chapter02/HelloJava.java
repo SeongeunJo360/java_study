@@ -4,7 +4,7 @@ public class HelloJava {
 	
 	//메인 메소드 - 실행을 위한 필수 메소드
 	public static void main(String[] args) {
-		System.out.println("Welcome to JavaWorld!!!");
+		System.out.println("Welcome to Java World!!!");
 		
 		/*
 		 * Hello Java를 출력하는 실행문을 주석처리 하고 
