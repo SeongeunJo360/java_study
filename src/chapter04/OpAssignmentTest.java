@@ -24,7 +24,7 @@ public class OpAssignmentTest {
 		number /= 10; //number = number / 10;
 		System.out.println(number);
 		
-		number %= 3; //number 변수에 10을 중펍으로 모듈러연산하여 대입
+		number %= 3; //number = number / 3; 의 나머지
 		System.out.println(number);
 		
 	}
