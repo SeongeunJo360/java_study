@@ -132,7 +132,7 @@ public class LunchOrderTestVer3 {
 							paymentFlag = false;
 						}
 						else {
-							System.out.println("=> 요글이 부족합니다. 다시 입력해 주세요.");
+							System.out.println("=> 요금이 부족합니다. 다시 입력해 주세요.");
 						}
 					}
 					else {
