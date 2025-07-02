@@ -19,7 +19,7 @@ public class LunchOrderTestVer2 {
 		System.out.println("**************************************************");
 		System.out.println("\n\t1. 햄버거(🍔):100\t2. 피자(🍕):200");
 		System.out.println("\t3. 라멘(🍜):300\t4. 샐러드(🥗):400");
-		System.out.println("\t0. 나가기");
+		System.out.println("\t9. 나가기");
 		System.out.println("**************************************************");
 		
 		Scanner scan = new Scanner(System.in);
@@ -53,7 +53,7 @@ public class LunchOrderTestVer2 {
 						menuName = "샐러드(🥗)";
 						menuPrice =400;
 						break;
-					case 0:
+					case 9:
 						System.out.println("--프로그램을 종료합니다.--");
 						System.out.println("안녕히가세요");
 						System.exit(0);
