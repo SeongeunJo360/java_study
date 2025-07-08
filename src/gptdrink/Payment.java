@@ -1,4 +1,4 @@
-package chapter07;
+package gptdrink;
 
 import java.util.Scanner;
 

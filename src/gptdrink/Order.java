@@ -1,4 +1,4 @@
-package chapter07;
+package gptdrink;
 
 public class Order {
 	Menu menu;			//선택한 음료

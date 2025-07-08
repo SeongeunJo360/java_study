@@ -1,4 +1,4 @@
-package chapter07;
+package gptdrink;
 
 public class Menu {
 	String name;   // 음료 이름
