@@ -1,4 +1,4 @@
-package kbbank;
+package kbank;
 
 public class AccountVo {
 	private String name;

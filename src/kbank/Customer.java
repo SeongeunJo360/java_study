@@ -1,4 +1,4 @@
-package kbbank;
+package kbank;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ public class Customer {
 	private String password;
 	private int money;
 	private AccountPaperVo accountPaper;
+	private Scanner scan;
 	
 	public Customer() {}
 	public Customer(String name, String accountNumber, String password, int money) {
@@ -16,13 +17,21 @@ public class Customer {
 		this.accountNumber = accountNumber;
 		this.password = password;
 		this.money = money;
-		
 	}
+	
 	public Scanner getScan() {
-//		return scan;
+		return scan;
+	}	
+	public AccountPaperVo getAccountPaper() {
+		return accountPaper;
 	}
-	
-	
+	public void setAccountPaper(AccountPaperVo accountPaper) {	//은행 비치용 입출금용지 가져옴
+		this.accountPaper = accountPaper;
+		this.accountPaper.setName(this.name);
+		this.accountPaper.setAccountNumber(this.accountNumber);
+		this.accountPaper.setPassword(this.password);
+		this.accountPaper.setMoney(this.money);
+	}
 	public String getName() {
 		return name;
 	}
@@ -47,16 +56,8 @@ public class Customer {
 	public void setMoney(int money) {
 		this.money = money;
 	}
-	public AccountPaperVo getAcountPaper() {
-		return accountPaper;
-	}
-	public void setAcountPaper(AccountPaperVo accountPaper) {
-		this.accountPaper = accountPaper;
-		this.accountPaper.setName(this.name);
-		this.accountPaper.setAccountName(this.accountNumber);
-		this.accountPaper.setPassword(this.password);
-		this.accountPaper.setMoney(this.money);
-	}
+
+	
 	
 	
 }

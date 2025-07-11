@@ -1,4 +1,4 @@
-package kbbank;
+package kbank;
 /**
  * 은행에 비치되어 있는 입출금 용지
  */

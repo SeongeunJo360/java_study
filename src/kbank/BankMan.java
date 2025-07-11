@@ -1,4 +1,4 @@
-package kbbank;
+package kbank;
 /**
  * 은행 직원 클래스
  */
