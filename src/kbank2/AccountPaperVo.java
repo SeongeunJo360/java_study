@@ -1,6 +1,7 @@
 package kbank2;
+
 /**
- * 입출금 장치
+ * 입출금 용지
  */
 public class AccountPaperVo {
 	private String name;
@@ -10,14 +11,16 @@ public class AccountPaperVo {
 	private static AccountPaperVo accountPaper = new AccountPaperVo();
 	
 	private AccountPaperVo() {}
+	
 	public static void showInfo() {
-		System.out.println("==============================================");
-		System.out.print(accountPaper.getName()+ "\t");
-		System.out.print(accountPaper.getAccountNumber()+ "\t");
-		System.out.print(accountPaper.getPassword()+ "\t");
-		System.out.print(accountPaper.getMoney()+ "\t");
-		System.out.println("==============================================");
+		System.out.println("==========================================");
+		System.out.print(accountPaper.getName() +"\t");
+		System.out.print(accountPaper.getAccountNumber() +"\t");
+		System.out.print(accountPaper.getPassword() +"\t");
+		System.out.print(accountPaper.getMoney() +"\n");
+		System.out.println("==========================================");
 	}
+	
 	public static AccountPaperVo getInstance() {
 		return accountPaper;
 	}
@@ -45,5 +48,22 @@ public class AccountPaperVo {
 	public void setMoney(int money) {
 		this.money = money;
 	}
-
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
