@@ -1,8 +1,3 @@
-/**
- * 
- */
-/**
- * 
- */
-module java_study {
+module chapter10 {
+    requires java.desktop;
 }
