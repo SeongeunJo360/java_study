@@ -2,6 +2,7 @@ package com.bookmgm.service;
 
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 import com.bookmgm.application.BookManagementApplication;
 import com.bookmgm.model.Book;

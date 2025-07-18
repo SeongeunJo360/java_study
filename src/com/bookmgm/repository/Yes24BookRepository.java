@@ -11,7 +11,7 @@ public class Yes24BookRepository implements BookRepository{
 	List<Book> library = new ArrayList<Book>();
 	
 	public Yes24BookRepository() {
-		System.out.println("** 교튝센터 도서관 생성 완료 **");
+		System.out.println("** Yes24 생성 완료 **");
 	}
 	
 	@Override
