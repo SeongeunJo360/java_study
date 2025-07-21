@@ -84,7 +84,7 @@ public class DefaultBookService implements BookService{
 	 */
 	@Override
 	public void register() {
-		selectRepository();
+//		selectRepository();
 		Book book = createBook();
 		if(repository.insert(book)) {
 			System.out.println("✅도서가 등록되었습니다.");
