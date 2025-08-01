@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.bookmgm.service.BookService;
 import com.bookmgm.service.DefaultBookService;
 
-public class BookManagementApplication {
+public class BookManagementApplication {	
 	public static final int REGISTER = 1;
 	public static final int LIST = 2;
 	public static final int SEARCH = 3;
@@ -16,8 +16,8 @@ public class BookManagementApplication {
 	public BookService service;
 	
 	public BookManagementApplication() {
-		service = new DefaultBookService(this);
 		scan = new Scanner(System.in);
+		service = new DefaultBookService(this);
 		showMenu();
 	}
 	
@@ -28,21 +28,17 @@ public class BookManagementApplication {
 		//배열을 이용하여 메뉴 출력
 		String[] labels = {"도서 등록", "도서 목록 조회", "도서 검색", "도서 수정", "도서 삭제", "종료"};
 		
-		System.out.println("======= 📕📖📚 도서 관리 시스템 📚📖📕 =======");
-		System.out.println("전체 도서수 : " + service.getCount());
+		System.out.println("=== 📕📖📚 도서 관리 시스템 📕📖📚 ===");
+		System.out.println("전체 도서수 :  " + service.getCount());
 		System.out.println("-------------------------------------------------");
-		for(int i=0;i<labels.length;i++) {
-			System.out.println((i+1)+"."+labels[i]);
-		}
-//		System.out.println("1. 도서 등록");
-//		System.out.println("2. 도서 목록 조회");
-//		System.out.println("3. 도서 검색");
-//		System.out.println("4. 도서 수정");
-//		System.out.println("5. 도서 삭제");
-//		System.out.println("6. 종료");
+		for(int i=0;i<labels.length; i++) {
+			System.out.println((i+1) + ".  " + labels[i]);
+		}		
 		System.out.println("-------------------------------------------------");
+		
 		selectMenu();
 	}
+	
 	/**
 	 * 메뉴 선택
 	 */
@@ -75,3 +71,12 @@ public class BookManagementApplication {
 	}
 
 }
+
+
+
+
+
+
+
+
+
